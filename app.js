@@ -35,4 +35,8 @@ async function clickeame() {
     // Imprimir el tensor en la consola
     console.log(tensor1.arraySync());
     console.log("Ejecutando app");
+
+    // Liberar memoria de los tensores
+    tensor1.dispose();
+    tensor2.dispose();
 }
